@@ -11,7 +11,6 @@
 #import "HttpRequestManager.h"
 #import <MAMapKit/MAMapKit.h>
 #import "UnitModel.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "UnitDetailViewController.h"
 
 @interface HomeViewController ()<MAMapViewDelegate>
@@ -53,6 +52,13 @@
     
     self.mapView = [[MAMapView alloc] init];
     self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    self.mapView.desiredAccuracy = kCLLocationAccuracyBest;
+    self.mapView.distanceFilter = 1.0f;
+    [self.mapView setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
+    self.mapView.pausesLocationUpdatesAutomatically = NO;
+//    self.mapView.allowsBackgroundLocationUpdates = YES;
+    
     [self.view addSubview:self.mapView];
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(btn.mas_bottom);

@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = nil;
-    self.configArr = [MenuConfig configArr];
+    self.configArr = [MenuConfig configMissionArr];
     [self makeView];
 }
 

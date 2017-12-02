@@ -14,6 +14,10 @@
 		24880D141FD10BBD007D078E /* UnitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D121FD10BBD007D078E /* UnitDetailViewController.xib */; };
 		24880D171FD123E4007D078E /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24880D151FD123E3007D078E /* nav_back@3x.png */; };
 		24880D181FD123E4007D078E /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24880D161FD123E3007D078E /* nav_back@2x.png */; };
+		24880D1D1FD13E08007D078E /* UnitDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D1B1FD13E08007D078E /* UnitDetailCell.m */; };
+		24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D1C1FD13E08007D078E /* UnitDetailCell.xib */; };
+		24880D221FD142B0007D078E /* UnitNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D201FD142B0007D078E /* UnitNameCell.m */; };
+		24880D231FD142B0007D078E /* UnitNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D211FD142B0007D078E /* UnitNameCell.xib */; };
 		24D674A11FCAA5140022525E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674A01FCAA5140022525E /* AppDelegate.m */; };
 		24D674C81FCAB26A0022525E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674C71FCAB26A0022525E /* main.m */; };
 		24D674D41FCAB7620022525E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D674D21FCAB7620022525E /* LaunchScreen.storyboard */; };
@@ -66,6 +70,12 @@
 		24880D121FD10BBD007D078E /* UnitDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitDetailViewController.xib; sourceTree = "<group>"; };
 		24880D151FD123E3007D078E /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
 		24880D161FD123E3007D078E /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		24880D1A1FD13E08007D078E /* UnitDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitDetailCell.h; sourceTree = "<group>"; };
+		24880D1B1FD13E08007D078E /* UnitDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitDetailCell.m; sourceTree = "<group>"; };
+		24880D1C1FD13E08007D078E /* UnitDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitDetailCell.xib; sourceTree = "<group>"; };
+		24880D1F1FD142B0007D078E /* UnitNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitNameCell.h; sourceTree = "<group>"; };
+		24880D201FD142B0007D078E /* UnitNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitNameCell.m; sourceTree = "<group>"; };
+		24880D211FD142B0007D078E /* UnitNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitNameCell.xib; sourceTree = "<group>"; };
 		24D6749C1FCAA5140022525E /* HDSCMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDSCMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D6749F1FCAA5140022525E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D674A01FCAA5140022525E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +151,22 @@
 				24880D081FD0E1C7007D078E /* UnitModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		24880D191FD13C36007D078E /* UnitDetail */ = {
+			isa = PBXGroup;
+			children = (
+				24880D101FD10BBD007D078E /* UnitDetailViewController.h */,
+				24880D111FD10BBD007D078E /* UnitDetailViewController.m */,
+				24880D121FD10BBD007D078E /* UnitDetailViewController.xib */,
+				24880D1A1FD13E08007D078E /* UnitDetailCell.h */,
+				24880D1B1FD13E08007D078E /* UnitDetailCell.m */,
+				24880D1C1FD13E08007D078E /* UnitDetailCell.xib */,
+				24880D1F1FD142B0007D078E /* UnitNameCell.h */,
+				24880D201FD142B0007D078E /* UnitNameCell.m */,
+				24880D211FD142B0007D078E /* UnitNameCell.xib */,
+			);
+			path = UnitDetail;
 			sourceTree = "<group>";
 		};
 		24D674931FCAA5140022525E = {
@@ -234,11 +260,9 @@
 		24D674FE1FCBB44E0022525E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				24880D191FD13C36007D078E /* UnitDetail */,
 				24D675021FCBB47D0022525E /* HomeViewController.h */,
 				24D675031FCBB47D0022525E /* HomeViewController.m */,
-				24880D101FD10BBD007D078E /* UnitDetailViewController.h */,
-				24880D111FD10BBD007D078E /* UnitDetailViewController.m */,
-				24880D121FD10BBD007D078E /* UnitDetailViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -442,9 +466,11 @@
 				24D675401FCBDF9A0022525E /* 我的-默认@3x.png in Resources */,
 				24D6753F1FCBDF9A0022525E /* 自选-选中@3x.png in Resources */,
 				24D674D41FCAB7620022525E /* LaunchScreen.storyboard in Resources */,
+				24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */,
 				24D675441FCBDF9A0022525E /* 资讯-默认@2x.png in Resources */,
 				24D674F31FCABF700022525E /* Assets.xcassets in Resources */,
 				24880D141FD10BBD007D078E /* UnitDetailViewController.xib in Resources */,
+				24880D231FD142B0007D078E /* UnitNameCell.xib in Resources */,
 				24D675391FCBDF9A0022525E /* 自选-默认@3x.png in Resources */,
 				24D6752C1FCBDECA0022525E /* 首页-默认@3x.png in Resources */,
 				24D675291FCBDECA0022525E /* 首页-选中@2x.png in Resources */,
@@ -528,10 +554,12 @@
 				24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */,
 				24D674FC1FCBB1290022525E /* SCBaseViewController.m in Sources */,
 				24D674C81FCAB26A0022525E /* main.m in Sources */,
+				24880D221FD142B0007D078E /* UnitNameCell.m in Sources */,
 				24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */,
 				24880D091FD0E1C7007D078E /* UnitModel.m in Sources */,
 				24D674A11FCAA5140022525E /* AppDelegate.m in Sources */,
 				24D675201FCBC2450022525E /* UPTransitionPresentAnimation.m in Sources */,
+				24880D1D1FD13E08007D078E /* UnitDetailCell.m in Sources */,
 				24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */,
 				24D675041FCBB47D0022525E /* HomeViewController.m in Sources */,
 			);

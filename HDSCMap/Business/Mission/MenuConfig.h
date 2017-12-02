@@ -10,6 +10,8 @@
 
 @interface MenuConfig : NSObject
 
-+ (NSArray *)configArr;
++ (NSArray *)configMissionArr;
+
++ (NSArray *)configQueryArr;
 
 @end
