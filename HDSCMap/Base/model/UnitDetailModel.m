@@ -6,13 +6,13 @@
 //  Copyright © 2017年 WHShunCheng. All rights reserved.
 //
 
-#import "UnitModel.h"
+#import "UnitDetailModel.h"
 
-@implementation UnitModel
+@implementation UnitDetailModel
 
-+ (UnitModel *)modelWithDictionary:(NSDictionary *)dic{
++ (UnitDetailModel *)modelWithDictionary:(NSDictionary *)dic{
     
-    UnitModel *model = [[UnitModel alloc] init];
+    UnitDetailModel *model = [[UnitDetailModel alloc] init];
     model.address = dic[@"address"];
     model.descriptions = dic[@"description"];
     model.keyId = ((NSString *)dic[@"id"]).integerValue;

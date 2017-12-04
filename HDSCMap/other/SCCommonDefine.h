@@ -142,4 +142,7 @@ fprintf(stderr, "\n");                                                      \
 //amap key
 #define AMAP_KEY    @"467496928a6153e0e0b52ca4beac87b2"
 
+//interface url
+#define INTERFACE_ADDRESS   @"192.168.2.107:8080"
+
 #endif /* SCCommonDefine_h */

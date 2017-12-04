@@ -14,7 +14,7 @@
 
 @implementation UnitNameCell
 
-+ (UnitNameCell *)cellWithTableView:(UITableView *)tableView model:(UnitModel *)model{
++ (UnitNameCell *)cellWithTableView:(UITableView *)tableView model:(UnitDetailModel *)model{
     
     UnitNameCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     if (nil == cell) {

@@ -18,7 +18,7 @@
 
 @implementation UnitDetailCell
 
-+ (UnitDetailCell *)cellWithTableView:(UITableView *)tableView model:(UnitModel *)model index:(NSIndexPath *)path{
++ (UnitDetailCell *)cellWithTableView:(UITableView *)tableView model:(UnitDetailModel *)model index:(NSIndexPath *)path{
     UnitDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     if (nil == cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] firstObject];

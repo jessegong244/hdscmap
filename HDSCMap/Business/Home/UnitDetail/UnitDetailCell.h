@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UnitModel.h"
+#import "UnitDetailModel.h"
 
 @interface UnitDetailCell : UITableViewCell
 
-+ (UnitDetailCell *)cellWithTableView:(UITableView *)tableView model:(UnitModel *)model index:(NSIndexPath *)path;
++ (UnitDetailCell *)cellWithTableView:(UITableView *)tableView model:(UnitDetailModel *)model index:(NSIndexPath *)path;
 
 @end

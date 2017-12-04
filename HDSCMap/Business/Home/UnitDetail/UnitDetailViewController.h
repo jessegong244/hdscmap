@@ -7,10 +7,10 @@
 //
 
 #import "SCBaseViewController.h"
-#import "UnitModel.h"
+#import "UnitDetailModel.h"
 
 @interface UnitDetailViewController : SCBaseViewController
 
-@property (nonatomic,strong) UnitModel* model;
+@property (nonatomic,strong) UnitDetailModel* model;
 
 @end

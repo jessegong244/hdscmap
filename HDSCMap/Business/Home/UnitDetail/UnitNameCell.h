@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UnitModel.h"
+#import "UnitDetailModel.h"
 
 @interface UnitNameCell : UITableViewCell
 
-+ (UnitNameCell *)cellWithTableView:(UITableView *)tableView model:(UnitModel *)model;
++ (UnitNameCell *)cellWithTableView:(UITableView *)tableView model:(UnitDetailModel *)model;
 
 @end

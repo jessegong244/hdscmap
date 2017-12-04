@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UnitModel : NSObject
+@interface UnitDetailModel : NSObject
 
 @property (nonatomic,copy)NSString *address;
 @property (nonatomic,copy)NSString *descriptions;
@@ -22,6 +22,6 @@
 @property (nonatomic,assign)NSInteger unitId;
 @property (nonatomic,copy)NSString *updateTime;
 
-+ (UnitModel *)modelWithDictionary:(NSDictionary *)dic;
++ (UnitDetailModel *)modelWithDictionary:(NSDictionary *)dic;
 
 @end

@@ -10,7 +10,7 @@
 #import "SCDBManage.h"
 #import "HttpRequestManager.h"
 #import <MAMapKit/MAMapKit.h>
-#import "UnitModel.h"
+#import "UnitDetailModel.h"
 #import "UnitDetailViewController.h"
 
 @interface HomeViewController ()<MAMapViewDelegate>
@@ -20,7 +20,7 @@
 
 @property (nonatomic,strong)MAMapView *mapView;
 
-@property (nonatomic,strong)UnitModel *model;
+@property (nonatomic,strong)UnitDetailModel *model;
 
 @end
 
@@ -55,9 +55,9 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.desiredAccuracy = kCLLocationAccuracyBest;
     self.mapView.distanceFilter = 1.0f;
+    
     [self.mapView setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
     self.mapView.pausesLocationUpdatesAutomatically = NO;
-//    self.mapView.allowsBackgroundLocationUpdates = YES;
     
     [self.view addSubview:self.mapView];
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -71,14 +71,13 @@
 - (void)insertAction{
 //    [[SCDBManage sharedInstance] insertTestDb];
     
-    NSDictionary *dic = @{@"unitId":@"15"};
-    NSString *url = @"http://localhost:8080/whsc/getUnitDetail";
-    NSString *encodeUrl = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *parameter = @{@"unitId":@"15"};
+    NSString *urlName = @"getUnitDetail";
     
-    [HttpRequestManager httpRequestGetWithUrl:encodeUrl parameter:dic success:^(id returnData) {
+    [HttpRequestManager httpRequestGetWithUrl:urlName parameter:parameter success:^(id returnData) {
         NSLog(@"returen = %@",returnData);
         NSDictionary *dic = (NSDictionary *)returnData;
-        _model = [UnitModel modelWithDictionary:dic];
+        _model = [UnitDetailModel modelWithDictionary:dic];
         self.latitude = _model.latitude;
         self.longitude = _model.longitude;
         
@@ -98,22 +97,22 @@
     }];
 }
 
-- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
-    if ([annotation isKindOfClass:[MAPointAnnotation class]])
-    {
-        static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
-        MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
-        if (annotationView == nil)
-        {
-            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
-        }
-        annotationView.canShowCallout= YES;       //设置气泡可以弹出，默认为NO
-        annotationView.animatesDrop = YES;        //设置标注动画显示，默认为NO
-        annotationView.pinColor = MAPinAnnotationColorPurple;
-        return annotationView;
-    }
-    return nil;
-}
+//- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
+//    if ([annotation isKindOfClass:[MAPointAnnotation class]])
+//    {
+//        static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
+//        MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
+//        if (annotationView == nil)
+//        {
+//            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
+//        }
+//        annotationView.canShowCallout= YES;       //设置气泡可以弹出，默认为NO
+//        annotationView.animatesDrop = YES;        //设置标注动画显示，默认为NO
+//        annotationView.pinColor = MAPinAnnotationColorPurple;
+//        return annotationView;
+//    }
+//    return nil;
+//}
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view{
     NSLog(@"yes");

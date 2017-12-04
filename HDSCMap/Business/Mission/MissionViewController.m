@@ -9,6 +9,7 @@
 #import "MissionViewController.h"
 #import "SkyAssociationMenuView.h"
 #import "MenuConfig.h"
+#import "CollectViewController.h"
 
 @interface MissionViewController ()<SkyAssociationMenuViewDelegate>
 
@@ -29,6 +30,12 @@
     self.navigationItem.leftBarButtonItem = nil;
     self.configArr = [MenuConfig configMissionArr];
     [self makeView];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
 }
 
 - (void)makeView{
@@ -146,12 +153,15 @@
             
         }
             break;
-        case 1018:{
+        case 1018:{//采集杆
             
         }
             break;
-        case 1019:{
-            
+        case 1019:{//采集户表
+            CollectViewController *vc = [CollectViewController new];
+            vc.type = 1;
+            [vc setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             

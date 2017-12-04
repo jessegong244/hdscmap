@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24880D091FD0E1C7007D078E /* UnitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D081FD0E1C7007D078E /* UnitModel.m */; };
+		24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D081FD0E1C7007D078E /* UnitDetailModel.m */; };
 		24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */; };
 		24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0E1FD0FBED007D078E /* MenuConfig.m */; };
 		24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D111FD10BBD007D078E /* UnitDetailViewController.m */; };
@@ -18,9 +18,14 @@
 		24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D1C1FD13E08007D078E /* UnitDetailCell.xib */; };
 		24880D221FD142B0007D078E /* UnitNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D201FD142B0007D078E /* UnitNameCell.m */; };
 		24880D231FD142B0007D078E /* UnitNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D211FD142B0007D078E /* UnitNameCell.xib */; };
+		24880D251FD395B1007D078E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24880D241FD395B1007D078E /* Launch Screen.storyboard */; };
+		24880D291FD4DEAA007D078E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D281FD4DEAA007D078E /* BaseModel.m */; };
+		24880D2C1FD4DEBF007D078E /* UnitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D2B1FD4DEBF007D078E /* UnitModel.m */; };
+		24880D311FD4E749007D078E /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D2F1FD4E749007D078E /* CollectViewController.m */; };
+		24880D321FD4E749007D078E /* CollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D301FD4E749007D078E /* CollectViewController.xib */; };
+		24880D351FD513AA007D078E /* UnitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D341FD513AA007D078E /* UnitManager.m */; };
 		24D674A11FCAA5140022525E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674A01FCAA5140022525E /* AppDelegate.m */; };
 		24D674C81FCAB26A0022525E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674C71FCAB26A0022525E /* main.m */; };
-		24D674D41FCAB7620022525E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D674D21FCAB7620022525E /* LaunchScreen.storyboard */; };
 		24D674F31FCABF700022525E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D674F11FCABF700022525E /* Assets.xcassets */; };
 		24D674F41FCABF700022525E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D674F21FCABF700022525E /* Info.plist */; };
 		24D674F81FCBAFF50022525E /* SCTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674F71FCBAFF50022525E /* SCTabbarViewController.m */; };
@@ -59,8 +64,8 @@
 /* Begin PBXFileReference section */
 		0CD6A7AE47FE077F9FF46EB9 /* Pods-HDSCMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDSCMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap.release.xcconfig"; sourceTree = "<group>"; };
 		214D6355272E23CD5F8E73A0 /* Pods-HDSCMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDSCMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap.debug.xcconfig"; sourceTree = "<group>"; };
-		24880D071FD0E1C7007D078E /* UnitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitModel.h; sourceTree = "<group>"; };
-		24880D081FD0E1C7007D078E /* UnitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitModel.m; sourceTree = "<group>"; };
+		24880D071FD0E1C7007D078E /* UnitDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitDetailModel.h; sourceTree = "<group>"; };
+		24880D081FD0E1C7007D078E /* UnitDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitDetailModel.m; sourceTree = "<group>"; };
 		24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyAssociationMenuView.m; sourceTree = "<group>"; };
 		24880D0B1FD0F595007D078E /* SkyAssociationMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyAssociationMenuView.h; sourceTree = "<group>"; };
 		24880D0D1FD0FBED007D078E /* MenuConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuConfig.h; sourceTree = "<group>"; };
@@ -76,11 +81,20 @@
 		24880D1F1FD142B0007D078E /* UnitNameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitNameCell.h; sourceTree = "<group>"; };
 		24880D201FD142B0007D078E /* UnitNameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitNameCell.m; sourceTree = "<group>"; };
 		24880D211FD142B0007D078E /* UnitNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitNameCell.xib; sourceTree = "<group>"; };
+		24880D241FD395B1007D078E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		24880D271FD4DEAA007D078E /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		24880D281FD4DEAA007D078E /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		24880D2A1FD4DEBF007D078E /* UnitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitModel.h; sourceTree = "<group>"; };
+		24880D2B1FD4DEBF007D078E /* UnitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitModel.m; sourceTree = "<group>"; };
+		24880D2E1FD4E749007D078E /* CollectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectViewController.h; sourceTree = "<group>"; };
+		24880D2F1FD4E749007D078E /* CollectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectViewController.m; sourceTree = "<group>"; };
+		24880D301FD4E749007D078E /* CollectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectViewController.xib; sourceTree = "<group>"; };
+		24880D331FD513AA007D078E /* UnitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitManager.h; sourceTree = "<group>"; };
+		24880D341FD513AA007D078E /* UnitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitManager.m; sourceTree = "<group>"; };
 		24D6749C1FCAA5140022525E /* HDSCMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDSCMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D6749F1FCAA5140022525E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D674A01FCAA5140022525E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		24D674C71FCAB26A0022525E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24D674D21FCAB7620022525E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D674F11FCABF700022525E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D674F21FCABF700022525E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D674F61FCBAFF50022525E /* SCTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTabbarViewController.h; sourceTree = "<group>"; };
@@ -147,8 +161,8 @@
 		24880D061FD0E1B6007D078E /* model */ = {
 			isa = PBXGroup;
 			children = (
-				24880D071FD0E1C7007D078E /* UnitModel.h */,
-				24880D081FD0E1C7007D078E /* UnitModel.m */,
+				24880D071FD0E1C7007D078E /* UnitDetailModel.h */,
+				24880D081FD0E1C7007D078E /* UnitDetailModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -167,6 +181,27 @@
 				24880D211FD142B0007D078E /* UnitNameCell.xib */,
 			);
 			path = UnitDetail;
+			sourceTree = "<group>";
+		};
+		24880D261FD4DE8C007D078E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24880D271FD4DEAA007D078E /* BaseModel.h */,
+				24880D281FD4DEAA007D078E /* BaseModel.m */,
+				24880D2A1FD4DEBF007D078E /* UnitModel.h */,
+				24880D2B1FD4DEBF007D078E /* UnitModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24880D2D1FD4E71E007D078E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24880D2E1FD4E749007D078E /* CollectViewController.h */,
+				24880D2F1FD4E749007D078E /* CollectViewController.m */,
+				24880D301FD4E749007D078E /* CollectViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		24D674931FCAA5140022525E = {
@@ -223,11 +258,11 @@
 		24D674F01FCABF700022525E /* other */ = {
 			isa = PBXGroup;
 			children = (
-				24D674D21FCAB7620022525E /* LaunchScreen.storyboard */,
 				24D674F11FCABF700022525E /* Assets.xcassets */,
 				24D674F21FCABF700022525E /* Info.plist */,
 				24D6750E1FCBB67C0022525E /* SCCommonDefine.h */,
 				24D675131FCBBB7D0022525E /* PrefixHeader.pch */,
+				24880D241FD395B1007D078E /* Launch Screen.storyboard */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -279,8 +314,11 @@
 		24D675001FCBB44E0022525E /* Mission */ = {
 			isa = PBXGroup;
 			children = (
+				24880D2D1FD4E71E007D078E /* ViewControllers */,
 				24880D0B1FD0F595007D078E /* SkyAssociationMenuView.h */,
 				24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */,
+				24880D331FD513AA007D078E /* UnitManager.h */,
+				24880D341FD513AA007D078E /* UnitManager.m */,
 				24D675081FCBB4AB0022525E /* MissionViewController.h */,
 				24D675091FCBB4AB0022525E /* MissionViewController.m */,
 				24880D0D1FD0FBED007D078E /* MenuConfig.h */,
@@ -350,6 +388,7 @@
 		24D675451FCBF7910022525E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				24880D261FD4DE8C007D078E /* Model */,
 				24DD88611FCFBA2600C3DB72 /* Net */,
 				24D675461FCBF8430022525E /* DB */,
 			);
@@ -465,7 +504,7 @@
 				24880D171FD123E4007D078E /* nav_back@3x.png in Resources */,
 				24D675401FCBDF9A0022525E /* 我的-默认@3x.png in Resources */,
 				24D6753F1FCBDF9A0022525E /* 自选-选中@3x.png in Resources */,
-				24D674D41FCAB7620022525E /* LaunchScreen.storyboard in Resources */,
+				24880D251FD395B1007D078E /* Launch Screen.storyboard in Resources */,
 				24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */,
 				24D675441FCBDF9A0022525E /* 资讯-默认@2x.png in Resources */,
 				24D674F31FCABF700022525E /* Assets.xcassets in Resources */,
@@ -474,6 +513,7 @@
 				24D675391FCBDF9A0022525E /* 自选-默认@3x.png in Resources */,
 				24D6752C1FCBDECA0022525E /* 首页-默认@3x.png in Resources */,
 				24D675291FCBDECA0022525E /* 首页-选中@2x.png in Resources */,
+				24880D321FD4E749007D078E /* CollectViewController.xib in Resources */,
 				24D675431FCBDF9A0022525E /* 资讯-默认@3x.png in Resources */,
 				24880D181FD123E4007D078E /* nav_back@2x.png in Resources */,
 			);
@@ -552,16 +592,20 @@
 				24D675161FCBC0EC0022525E /* SCNavigationController.m in Sources */,
 				24D6750A1FCBB4AB0022525E /* MissionViewController.m in Sources */,
 				24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */,
+				24880D311FD4E749007D078E /* CollectViewController.m in Sources */,
+				24880D351FD513AA007D078E /* UnitManager.m in Sources */,
 				24D674FC1FCBB1290022525E /* SCBaseViewController.m in Sources */,
 				24D674C81FCAB26A0022525E /* main.m in Sources */,
 				24880D221FD142B0007D078E /* UnitNameCell.m in Sources */,
 				24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */,
-				24880D091FD0E1C7007D078E /* UnitModel.m in Sources */,
+				24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */,
 				24D674A11FCAA5140022525E /* AppDelegate.m in Sources */,
 				24D675201FCBC2450022525E /* UPTransitionPresentAnimation.m in Sources */,
 				24880D1D1FD13E08007D078E /* UnitDetailCell.m in Sources */,
 				24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */,
+				24880D291FD4DEAA007D078E /* BaseModel.m in Sources */,
 				24D675041FCBB47D0022525E /* HomeViewController.m in Sources */,
+				24880D2C1FD4DEBF007D078E /* UnitModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +721,9 @@
 			baseConfigurationReference = 214D6355272E23CD5F8E73A0 /* Pods-HDSCMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94E7NZJG58;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HDSCMap/other/PrefixHeader.pch";
 				INFOPLIST_FILE = HDSCMap/other/Info.plist;
@@ -685,6 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whshuncheng.ios.HDSCMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -694,7 +741,9 @@
 			baseConfigurationReference = 0CD6A7AE47FE077F9FF46EB9 /* Pods-HDSCMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94E7NZJG58;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HDSCMap/other/PrefixHeader.pch";
 				INFOPLIST_FILE = HDSCMap/other/Info.plist;
@@ -702,6 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whshuncheng.ios.HDSCMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
