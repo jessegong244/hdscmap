@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248224A31FDF7128002F1E47 /* MeterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224A11FDF7128002F1E47 /* MeterListViewController.m */; };
+		248224A41FDF7128002F1E47 /* MeterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224A21FDF7128002F1E47 /* MeterListViewController.xib */; };
+		248224A71FDFBE3F002F1E47 /* LocModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224A61FDFBE3F002F1E47 /* LocModel.m */; };
+		248224AB1FDFD5AA002F1E47 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224A91FDFD5AA002F1E47 /* LocationViewController.m */; };
+		248224AC1FDFD5AA002F1E47 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */; };
 		24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D081FD0E1C7007D078E /* UnitDetailModel.m */; };
 		24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */; };
 		24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0E1FD0FBED007D078E /* MenuConfig.m */; };
@@ -24,6 +29,11 @@
 		24880D311FD4E749007D078E /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D2F1FD4E749007D078E /* CollectViewController.m */; };
 		24880D321FD4E749007D078E /* CollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D301FD4E749007D078E /* CollectViewController.xib */; };
 		24880D351FD513AA007D078E /* UnitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D341FD513AA007D078E /* UnitManager.m */; };
+		24880D391FD7D868007D078E /* PageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D381FD7D868007D078E /* PageUtil.m */; };
+		24880D3D1FD8E7CE007D078E /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D3B1FD8E7CE007D078E /* CreateViewController.m */; };
+		24880D3E1FD8E7CE007D078E /* CreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24880D3C1FD8E7CE007D078E /* CreateViewController.xib */; };
+		24880D411FD914A9007D078E /* 行情-自定义@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24880D3F1FD914A9007D078E /* 行情-自定义@2x.png */; };
+		24880D421FD914A9007D078E /* 行情-自定义@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24880D401FD914A9007D078E /* 行情-自定义@3x.png */; };
 		24D674A11FCAA5140022525E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674A01FCAA5140022525E /* AppDelegate.m */; };
 		24D674C81FCAB26A0022525E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D674C71FCAB26A0022525E /* main.m */; };
 		24D674F31FCABF700022525E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D674F11FCABF700022525E /* Assets.xcassets */; };
@@ -64,6 +74,14 @@
 /* Begin PBXFileReference section */
 		0CD6A7AE47FE077F9FF46EB9 /* Pods-HDSCMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDSCMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap.release.xcconfig"; sourceTree = "<group>"; };
 		214D6355272E23CD5F8E73A0 /* Pods-HDSCMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDSCMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap.debug.xcconfig"; sourceTree = "<group>"; };
+		248224A01FDF7128002F1E47 /* MeterListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeterListViewController.h; sourceTree = "<group>"; };
+		248224A11FDF7128002F1E47 /* MeterListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeterListViewController.m; sourceTree = "<group>"; };
+		248224A21FDF7128002F1E47 /* MeterListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeterListViewController.xib; sourceTree = "<group>"; };
+		248224A51FDFBE3F002F1E47 /* LocModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocModel.h; sourceTree = "<group>"; };
+		248224A61FDFBE3F002F1E47 /* LocModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocModel.m; sourceTree = "<group>"; };
+		248224A81FDFD5AA002F1E47 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		248224A91FDFD5AA002F1E47 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		24880D071FD0E1C7007D078E /* UnitDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitDetailModel.h; sourceTree = "<group>"; };
 		24880D081FD0E1C7007D078E /* UnitDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitDetailModel.m; sourceTree = "<group>"; };
 		24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyAssociationMenuView.m; sourceTree = "<group>"; };
@@ -91,6 +109,13 @@
 		24880D301FD4E749007D078E /* CollectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectViewController.xib; sourceTree = "<group>"; };
 		24880D331FD513AA007D078E /* UnitManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitManager.h; sourceTree = "<group>"; };
 		24880D341FD513AA007D078E /* UnitManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitManager.m; sourceTree = "<group>"; };
+		24880D371FD7D868007D078E /* PageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageUtil.h; sourceTree = "<group>"; };
+		24880D381FD7D868007D078E /* PageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageUtil.m; sourceTree = "<group>"; };
+		24880D3A1FD8E7CE007D078E /* CreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		24880D3B1FD8E7CE007D078E /* CreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		24880D3C1FD8E7CE007D078E /* CreateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateViewController.xib; sourceTree = "<group>"; };
+		24880D3F1FD914A9007D078E /* 行情-自定义@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "行情-自定义@2x.png"; sourceTree = "<group>"; };
+		24880D401FD914A9007D078E /* 行情-自定义@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "行情-自定义@3x.png"; sourceTree = "<group>"; };
 		24D6749C1FCAA5140022525E /* HDSCMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDSCMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D6749F1FCAA5140022525E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D674A01FCAA5140022525E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,6 +215,8 @@
 				24880D281FD4DEAA007D078E /* BaseModel.m */,
 				24880D2A1FD4DEBF007D078E /* UnitModel.h */,
 				24880D2B1FD4DEBF007D078E /* UnitModel.m */,
+				248224A51FDFBE3F002F1E47 /* LocModel.h */,
+				248224A61FDFBE3F002F1E47 /* LocModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,8 +227,23 @@
 				24880D2E1FD4E749007D078E /* CollectViewController.h */,
 				24880D2F1FD4E749007D078E /* CollectViewController.m */,
 				24880D301FD4E749007D078E /* CollectViewController.xib */,
+				248224A01FDF7128002F1E47 /* MeterListViewController.h */,
+				248224A11FDF7128002F1E47 /* MeterListViewController.m */,
+				248224A21FDF7128002F1E47 /* MeterListViewController.xib */,
+				24880D3A1FD8E7CE007D078E /* CreateViewController.h */,
+				24880D3B1FD8E7CE007D078E /* CreateViewController.m */,
+				24880D3C1FD8E7CE007D078E /* CreateViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		24880D361FD7D845007D078E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				24880D371FD7D868007D078E /* PageUtil.h */,
+				24880D381FD7D868007D078E /* PageUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		24D674931FCAA5140022525E = {
@@ -307,6 +349,9 @@
 			children = (
 				24D675051FCBB4990022525E /* MeViewController.h */,
 				24D675061FCBB4990022525E /* MeViewController.m */,
+				248224A81FDFD5AA002F1E47 /* LocationViewController.h */,
+				248224A91FDFD5AA002F1E47 /* LocationViewController.m */,
+				248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -363,6 +408,8 @@
 		24D675241FCBDECA0022525E /* image */ = {
 			isa = PBXGroup;
 			children = (
+				24880D3F1FD914A9007D078E /* 行情-自定义@2x.png */,
+				24880D401FD914A9007D078E /* 行情-自定义@3x.png */,
 				24880D161FD123E3007D078E /* nav_back@2x.png */,
 				24880D151FD123E3007D078E /* nav_back@3x.png */,
 				24D675361FCBDF9A0022525E /* 我的-默认@2x.png */,
@@ -388,6 +435,7 @@
 		24D675451FCBF7910022525E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				24880D361FD7D845007D078E /* Util */,
 				24880D261FD4DE8C007D078E /* Model */,
 				24DD88611FCFBA2600C3DB72 /* Net */,
 				24D675461FCBF8430022525E /* DB */,
@@ -465,6 +513,11 @@
 					24D6749B1FCAA5140022525E = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -496,17 +549,22 @@
 				24D674F41FCABF700022525E /* Info.plist in Resources */,
 				24D6752B1FCBDECA0022525E /* 首页-默认@2x.png in Resources */,
 				24D6753A1FCBDF9A0022525E /* 自选-选中@2x.png in Resources */,
+				24880D411FD914A9007D078E /* 行情-自定义@2x.png in Resources */,
+				24880D421FD914A9007D078E /* 行情-自定义@3x.png in Resources */,
+				248224A41FDF7128002F1E47 /* MeterListViewController.xib in Resources */,
 				24D675421FCBDF9A0022525E /* 我的-默认@2x.png in Resources */,
 				24D6753D1FCBDF9A0022525E /* 资讯-选中@3x.png in Resources */,
 				24D675411FCBDF9A0022525E /* 我的-选中@2x.png in Resources */,
 				24D6753B1FCBDF9A0022525E /* 我的-选中@3x.png in Resources */,
 				24D6753C1FCBDF9A0022525E /* 自选-默认@2x.png in Resources */,
+				248224AC1FDFD5AA002F1E47 /* LocationViewController.xib in Resources */,
 				24880D171FD123E4007D078E /* nav_back@3x.png in Resources */,
 				24D675401FCBDF9A0022525E /* 我的-默认@3x.png in Resources */,
 				24D6753F1FCBDF9A0022525E /* 自选-选中@3x.png in Resources */,
 				24880D251FD395B1007D078E /* Launch Screen.storyboard in Resources */,
 				24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */,
 				24D675441FCBDF9A0022525E /* 资讯-默认@2x.png in Resources */,
+				24880D3E1FD8E7CE007D078E /* CreateViewController.xib in Resources */,
 				24D674F31FCABF700022525E /* Assets.xcassets in Resources */,
 				24880D141FD10BBD007D078E /* UnitDetailViewController.xib in Resources */,
 				24880D231FD142B0007D078E /* UnitNameCell.xib in Resources */,
@@ -530,6 +588,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap-resources.sh",
 				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -586,6 +645,7 @@
 				24DD88641FCFCCB900C3DB72 /* HttpRequestManager.m in Sources */,
 				24D675121FCBBB360022525E /* UIColor+rgb.m in Sources */,
 				24D675221FCBC2450022525E /* UPTransitionDismissAnimation.m in Sources */,
+				248224AB1FDFD5AA002F1E47 /* LocationViewController.m in Sources */,
 				24D6750D1FCBB4CD0022525E /* QueryViewController.m in Sources */,
 				24D675491FCBF86C0022525E /* SCDBManage.m in Sources */,
 				24D675071FCBB4990022525E /* MeViewController.m in Sources */,
@@ -593,6 +653,7 @@
 				24D6750A1FCBB4AB0022525E /* MissionViewController.m in Sources */,
 				24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */,
 				24880D311FD4E749007D078E /* CollectViewController.m in Sources */,
+				24880D391FD7D868007D078E /* PageUtil.m in Sources */,
 				24880D351FD513AA007D078E /* UnitManager.m in Sources */,
 				24D674FC1FCBB1290022525E /* SCBaseViewController.m in Sources */,
 				24D674C81FCAB26A0022525E /* main.m in Sources */,
@@ -603,9 +664,12 @@
 				24D675201FCBC2450022525E /* UPTransitionPresentAnimation.m in Sources */,
 				24880D1D1FD13E08007D078E /* UnitDetailCell.m in Sources */,
 				24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */,
+				24880D3D1FD8E7CE007D078E /* CreateViewController.m in Sources */,
 				24880D291FD4DEAA007D078E /* BaseModel.m in Sources */,
+				248224A71FDFBE3F002F1E47 /* LocModel.m in Sources */,
 				24D675041FCBB47D0022525E /* HomeViewController.m in Sources */,
 				24880D2C1FD4DEBF007D078E /* UnitModel.m in Sources */,
+				248224A31FDF7128002F1E47 /* MeterListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

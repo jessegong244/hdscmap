@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,10 +15,10 @@
                 <outlet property="cunBtn" destination="TUZ-1U-JqA" id="pou-GS-7EU"/>
                 <outlet property="fenjuBtn" destination="Jp4-U1-l2b" id="MeS-8K-EAx"/>
                 <outlet property="gdsBtn" destination="pOc-5q-McV" id="AmE-Ai-jeu"/>
-                <outlet property="hubiaoBtn" destination="CS4-IN-DUO" id="kt2-0l-wxg"/>
                 <outlet property="juBtn" destination="bgQ-TC-r0x" id="lE2-Hh-JNa"/>
                 <outlet property="lineBtn" destination="GXX-2h-3kz" id="aZa-FH-DwC"/>
                 <outlet property="pickView" destination="8rE-w2-qCk" id="fC4-Rd-eBD"/>
+                <outlet property="picker" destination="fhX-88-lS8" id="mjW-vr-mTO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,7 +33,7 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="fxf-lW-GMk"/>
+                        <action selector="juAction:" destination="-1" eventType="touchUpInside" id="SGf-Jt-eum"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="局" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0R-FB-6Av">
@@ -84,21 +84,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="户表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-w1-Lsu">
-                    <rect key="frame" x="0.0" y="180" width="80" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp4-U1-l2b">
                     <rect key="frame" x="80" y="30" width="295" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="Vuk-zX-gOa"/>
+                        <action selector="fenjuAction:" destination="-1" eventType="touchUpInside" id="Nrh-LY-4C9"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-5q-McV">
@@ -107,7 +99,7 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="t6s-xO-dsz"/>
+                        <action selector="gdsAction:" destination="-1" eventType="touchUpInside" id="I7o-Lh-ocO"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-Zz-baQ">
@@ -116,7 +108,7 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="WDT-0C-qM3"/>
+                        <action selector="bdzAction:" destination="-1" eventType="touchUpInside" id="mye-0m-52M"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXX-2h-3kz">
@@ -125,7 +117,7 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="WjF-O1-oVd"/>
+                        <action selector="lineAction:" destination="-1" eventType="touchUpInside" id="rbY-R1-JN5"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUZ-1U-JqA">
@@ -134,22 +126,13 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="请选择"/>
                     <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="OIa-Ue-rzY"/>
+                        <action selector="cunAction:" destination="-1" eventType="touchUpInside" id="Cbg-wa-WaB"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-IN-DUO">
-                    <rect key="frame" x="80" y="180" width="295" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="请选择"/>
-                    <connections>
-                        <action selector="selectAction:" destination="-1" eventType="touchUpInside" id="1Bm-0W-qiW"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhX-88-lS8">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhX-88-lS8">
                     <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                     <subviews>
-                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-w2-qCk">
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-w2-qCk">
                             <rect key="frame" x="0.0" y="30" width="375" height="120"/>
                             <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
@@ -199,11 +182,37 @@
                         <constraint firstItem="8rE-w2-qCk" firstAttribute="top" secondItem="pde-Cb-Hwn" secondAttribute="bottom" id="pBT-7S-iYx"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY6-FB-mfk">
+                    <rect key="frame" x="156" y="479" width="63" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="0AP-j6-PcZ"/>
+                        <constraint firstAttribute="height" constant="30" id="1A9-K5-b9c"/>
+                    </constraints>
+                    <state key="normal" title="新建户表"/>
+                    <connections>
+                        <action selector="createNew:" destination="-1" eventType="touchUpInside" id="6xj-yJ-Q1B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOz-or-ZAO">
+                    <rect key="frame" x="0.0" y="479" width="63" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="NhO-ga-T12"/>
+                        <constraint firstAttribute="height" constant="30" id="pg0-Kl-M6V"/>
+                    </constraints>
+                    <state key="normal" title="查询户表"/>
+                    <connections>
+                        <action selector="checkAction:" destination="-1" eventType="touchUpInside" id="NG1-lr-P83"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fhX-88-lS8" firstAttribute="top" secondItem="jY6-FB-mfk" secondAttribute="bottom" constant="8" id="0iN-hM-Ehl"/>
                 <constraint firstItem="fhX-88-lS8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1yY-bo-hdV"/>
+                <constraint firstItem="jY6-FB-mfk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BTc-18-MZT"/>
+                <constraint firstItem="fhX-88-lS8" firstAttribute="top" secondItem="iOz-or-ZAO" secondAttribute="bottom" constant="8" id="Hl4-dB-Bz4"/>
                 <constraint firstAttribute="trailing" secondItem="fhX-88-lS8" secondAttribute="trailing" id="aun-7y-Tcl"/>
+                <constraint firstItem="iOz-or-ZAO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="daZ-Ur-X4N"/>
                 <constraint firstAttribute="bottom" secondItem="fhX-88-lS8" secondAttribute="bottom" id="qw4-sP-ill"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>

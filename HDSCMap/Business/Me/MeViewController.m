@@ -7,6 +7,7 @@
 //
 
 #import "MeViewController.h"
+#import "LocationViewController.h"
 
 @interface MeViewController ()
 
@@ -17,8 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = nil;
+    
+    UIButton *btn = [UIButton new];
+    [btn setTitle:@"Loc" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(locationAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view);
+        make.width.height.mas_equalTo(@50);
+        make.centerX.equalTo(self.view);
+    }];
 }
 
-
+- (void)locationAction{
+    LocationViewController *vc = [[LocationViewController alloc] init];
+    [vc setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

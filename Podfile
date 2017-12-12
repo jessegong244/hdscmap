@@ -13,5 +13,6 @@ pod 'AMap3DMap-NO-IDFA' #3D地图SDK
 #pod 'AMap2DMap' #2D地图SDK (2D和3D不能同时使用)
 pod 'AMapSearch-NO-IDFA' #搜索功能
 pod 'AMapLocation-NO-IDFA'
+pod 'QBImagePickerController'
 
 end

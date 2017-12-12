@@ -10,8 +10,7 @@
 
 @implementation UnitDetailModel
 
-+ (UnitDetailModel *)modelWithDictionary:(NSDictionary *)dic{
-    
++ (instancetype)modelWithDictionary:(NSDictionary *)dic{
     UnitDetailModel *model = [[UnitDetailModel alloc] init];
     model.address = dic[@"address"];
     model.descriptions = dic[@"description"];
@@ -24,6 +23,8 @@
     model.phone = dic[@"phone"];
     model.unitId = ((NSString *)dic[@"unitId"]).integerValue;
     model.updateTime = dic[@"updateTime"];
+    model.fatherId = ((NSString *)dic[@"fatherId"]).integerValue;
+    model.level = ((NSString *)dic[@"level"]).integerValue;
     return model;
 }
 

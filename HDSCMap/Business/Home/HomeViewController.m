@@ -71,10 +71,11 @@
 - (void)insertAction{
 //    [[SCDBManage sharedInstance] insertTestDb];
     
-    NSDictionary *parameter = @{@"unitId":@"15"};
+    NSDictionary *parameter = @{@"unitId":@15};
+
     NSString *urlName = @"getUnitDetail";
     
-    [HttpRequestManager httpRequestGetWithUrl:urlName parameter:parameter success:^(id returnData) {
+    [HttpRequestManager httpRequestPostWithUrl:urlName parameter:parameter success:^(id returnData) {
         NSLog(@"returen = %@",returnData);
         NSDictionary *dic = (NSDictionary *)returnData;
         _model = [UnitDetailModel modelWithDictionary:dic];
@@ -93,7 +94,7 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     } failture:^(id returnData) {
-        
+        NSLog(@"returen = %@",returnData);
     }];
 }
 

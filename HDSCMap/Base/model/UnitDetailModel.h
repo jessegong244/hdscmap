@@ -6,9 +6,9 @@
 //  Copyright © 2017年 WHShunCheng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-@interface UnitDetailModel : NSObject
+@interface UnitDetailModel : BaseModel
 
 @property (nonatomic,copy)NSString *address;
 @property (nonatomic,copy)NSString *descriptions;
@@ -22,6 +22,9 @@
 @property (nonatomic,assign)NSInteger unitId;
 @property (nonatomic,copy)NSString *updateTime;
 
-+ (UnitDetailModel *)modelWithDictionary:(NSDictionary *)dic;
+@property (nonatomic,assign)NSInteger fatherId;
+@property (nonatomic,assign)NSInteger level;
+
+
 
 @end
