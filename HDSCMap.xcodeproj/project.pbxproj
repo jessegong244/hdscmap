@@ -12,6 +12,25 @@
 		248224A71FDFBE3F002F1E47 /* LocModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224A61FDFBE3F002F1E47 /* LocModel.m */; };
 		248224AB1FDFD5AA002F1E47 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224A91FDFD5AA002F1E47 /* LocationViewController.m */; };
 		248224AC1FDFD5AA002F1E47 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */; };
+		248224AE1FE0B34A002F1E47 /* 箭头.png in Resources */ = {isa = PBXBuildFile; fileRef = 248224AD1FE0B34A002F1E47 /* 箭头.png */; };
+		248224B51FE0CA73002F1E47 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224B31FE0CA72002F1E47 /* Record.m */; };
+		248224B81FE0CAEA002F1E47 /* MAMutablePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224B61FE0CAEA002F1E47 /* MAMutablePolyline.m */; };
+		248224BB1FE0CB35002F1E47 /* MAMutablePolylineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224BA1FE0CB34002F1E47 /* MAMutablePolylineRenderer.m */; };
+		248224CF1FE0D178002F1E47 /* YSMapPaintFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224BE1FE0D178002F1E47 /* YSMapPaintFunc.m */; };
+		248224D01FE0D178002F1E47 /* YSMapCalculateFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224C11FE0D178002F1E47 /* YSMapCalculateFunc.m */; };
+		248224D21FE0D178002F1E47 /* YSCoordinateProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224C81FE0D178002F1E47 /* YSCoordinateProcesser.m */; };
+		248224D31FE0D178002F1E47 /* LocationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224C91FE0D178002F1E47 /* LocationData.m */; };
+		248224D41FE0D178002F1E47 /* KalmanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224CA1FE0D178002F1E47 /* KalmanFilter.m */; };
+		248224D61FE0D178002F1E47 /* YSMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224CC1FE0D178002F1E47 /* YSMapManager.m */; };
+		248224D71FE0D178002F1E47 /* YSMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224CE1FE0D178002F1E47 /* YSMapAnnotation.m */; };
+		248224DA1FE2048B002F1E47 /* SCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224D91FE2048B002F1E47 /* SCTool.m */; };
+		248224DE1FE21998002F1E47 /* LocationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224DC1FE21998002F1E47 /* LocationListViewController.m */; };
+		248224DF1FE21998002F1E47 /* LocationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224DD1FE21998002F1E47 /* LocationListViewController.xib */; };
+		248224E31FE21A9D002F1E47 /* LocationListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224E11FE21A9D002F1E47 /* LocationListCell.m */; };
+		248224E41FE21A9D002F1E47 /* LocationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224E21FE21A9D002F1E47 /* LocationListCell.xib */; };
+		248224E71FE221AA002F1E47 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224E61FE221AA002F1E47 /* LocationModel.m */; };
+		248224EB1FE224C1002F1E47 /* ShowLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224E91FE224C1002F1E47 /* ShowLocationViewController.m */; };
+		248224EC1FE224C1002F1E47 /* ShowLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224EA1FE224C1002F1E47 /* ShowLocationViewController.xib */; };
 		24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D081FD0E1C7007D078E /* UnitDetailModel.m */; };
 		24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */; };
 		24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0E1FD0FBED007D078E /* MenuConfig.m */; };
@@ -82,6 +101,40 @@
 		248224A81FDFD5AA002F1E47 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		248224A91FDFD5AA002F1E47 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		248224AD1FE0B34A002F1E47 /* 箭头.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "箭头.png"; sourceTree = "<group>"; };
+		248224B31FE0CA72002F1E47 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		248224B41FE0CA73002F1E47 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		248224B61FE0CAEA002F1E47 /* MAMutablePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMutablePolyline.m; sourceTree = "<group>"; };
+		248224B71FE0CAEA002F1E47 /* MAMutablePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMutablePolyline.h; sourceTree = "<group>"; };
+		248224B91FE0CB34002F1E47 /* MAMutablePolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMutablePolylineRenderer.h; sourceTree = "<group>"; };
+		248224BA1FE0CB34002F1E47 /* MAMutablePolylineRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMutablePolylineRenderer.m; sourceTree = "<group>"; };
+		248224BD1FE0D178002F1E47 /* YSMapCalculateFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMapCalculateFunc.h; sourceTree = "<group>"; };
+		248224BE1FE0D178002F1E47 /* YSMapPaintFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMapPaintFunc.m; sourceTree = "<group>"; };
+		248224BF1FE0D178002F1E47 /* YSMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMapAnnotation.h; sourceTree = "<group>"; };
+		248224C01FE0D178002F1E47 /* YSMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMapManager.h; sourceTree = "<group>"; };
+		248224C11FE0D178002F1E47 /* YSMapCalculateFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMapCalculateFunc.m; sourceTree = "<group>"; };
+		248224C31FE0D178002F1E47 /* KalmanFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalmanFilter.h; sourceTree = "<group>"; };
+		248224C41FE0D178002F1E47 /* LocationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationData.h; sourceTree = "<group>"; };
+		248224C51FE0D178002F1E47 /* YSCoordinateProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCoordinateProcesser.h; sourceTree = "<group>"; };
+		248224C81FE0D178002F1E47 /* YSCoordinateProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCoordinateProcesser.m; sourceTree = "<group>"; };
+		248224C91FE0D178002F1E47 /* LocationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationData.m; sourceTree = "<group>"; };
+		248224CA1FE0D178002F1E47 /* KalmanFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalmanFilter.m; sourceTree = "<group>"; };
+		248224CC1FE0D178002F1E47 /* YSMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMapManager.m; sourceTree = "<group>"; };
+		248224CD1FE0D178002F1E47 /* YSMapPaintFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMapPaintFunc.h; sourceTree = "<group>"; };
+		248224CE1FE0D178002F1E47 /* YSMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMapAnnotation.m; sourceTree = "<group>"; };
+		248224D81FE2048B002F1E47 /* SCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTool.h; sourceTree = "<group>"; };
+		248224D91FE2048B002F1E47 /* SCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTool.m; sourceTree = "<group>"; };
+		248224DB1FE21998002F1E47 /* LocationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationListViewController.h; sourceTree = "<group>"; };
+		248224DC1FE21998002F1E47 /* LocationListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationListViewController.m; sourceTree = "<group>"; };
+		248224DD1FE21998002F1E47 /* LocationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationListViewController.xib; sourceTree = "<group>"; };
+		248224E01FE21A9D002F1E47 /* LocationListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationListCell.h; sourceTree = "<group>"; };
+		248224E11FE21A9D002F1E47 /* LocationListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationListCell.m; sourceTree = "<group>"; };
+		248224E21FE21A9D002F1E47 /* LocationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationListCell.xib; sourceTree = "<group>"; };
+		248224E51FE221AA002F1E47 /* LocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		248224E61FE221AA002F1E47 /* LocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
+		248224E81FE224C1002F1E47 /* ShowLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowLocationViewController.h; sourceTree = "<group>"; };
+		248224E91FE224C1002F1E47 /* ShowLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowLocationViewController.m; sourceTree = "<group>"; };
+		248224EA1FE224C1002F1E47 /* ShowLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowLocationViewController.xib; sourceTree = "<group>"; };
 		24880D071FD0E1C7007D078E /* UnitDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitDetailModel.h; sourceTree = "<group>"; };
 		24880D081FD0E1C7007D078E /* UnitDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitDetailModel.m; sourceTree = "<group>"; };
 		24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyAssociationMenuView.m; sourceTree = "<group>"; };
@@ -183,6 +236,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		248224BC1FE0D178002F1E47 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				248224BD1FE0D178002F1E47 /* YSMapCalculateFunc.h */,
+				248224BE1FE0D178002F1E47 /* YSMapPaintFunc.m */,
+				248224BF1FE0D178002F1E47 /* YSMapAnnotation.h */,
+				248224C01FE0D178002F1E47 /* YSMapManager.h */,
+				248224C11FE0D178002F1E47 /* YSMapCalculateFunc.m */,
+				248224C21FE0D178002F1E47 /* Kalman */,
+				248224CC1FE0D178002F1E47 /* YSMapManager.m */,
+				248224CD1FE0D178002F1E47 /* YSMapPaintFunc.h */,
+				248224CE1FE0D178002F1E47 /* YSMapAnnotation.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		248224C21FE0D178002F1E47 /* Kalman */ = {
+			isa = PBXGroup;
+			children = (
+				248224C31FE0D178002F1E47 /* KalmanFilter.h */,
+				248224C41FE0D178002F1E47 /* LocationData.h */,
+				248224C51FE0D178002F1E47 /* YSCoordinateProcesser.h */,
+				248224C81FE0D178002F1E47 /* YSCoordinateProcesser.m */,
+				248224C91FE0D178002F1E47 /* LocationData.m */,
+				248224CA1FE0D178002F1E47 /* KalmanFilter.m */,
+			);
+			path = Kalman;
+			sourceTree = "<group>";
+		};
 		24880D061FD0E1B6007D078E /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +293,8 @@
 		24880D261FD4DE8C007D078E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				248224B41FE0CA73002F1E47 /* Record.h */,
+				248224B31FE0CA72002F1E47 /* Record.m */,
 				24880D271FD4DEAA007D078E /* BaseModel.h */,
 				24880D281FD4DEAA007D078E /* BaseModel.m */,
 				24880D2A1FD4DEBF007D078E /* UnitModel.h */,
@@ -242,6 +326,8 @@
 			children = (
 				24880D371FD7D868007D078E /* PageUtil.h */,
 				24880D381FD7D868007D078E /* PageUtil.m */,
+				248224D81FE2048B002F1E47 /* SCTool.h */,
+				248224D91FE2048B002F1E47 /* SCTool.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -283,6 +369,7 @@
 		24D674EE1FCABF2F0022525E /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				248224BC1FE0D178002F1E47 /* Map */,
 				24D675171FCBC2450022525E /* Animate */,
 				24D6750F1FCBBB110022525E /* Category */,
 			);
@@ -347,8 +434,23 @@
 		24D674FF1FCBB44E0022525E /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				248224B91FE0CB34002F1E47 /* MAMutablePolylineRenderer.h */,
+				248224BA1FE0CB34002F1E47 /* MAMutablePolylineRenderer.m */,
+				248224B71FE0CAEA002F1E47 /* MAMutablePolyline.h */,
+				248224B61FE0CAEA002F1E47 /* MAMutablePolyline.m */,
 				24D675051FCBB4990022525E /* MeViewController.h */,
 				24D675061FCBB4990022525E /* MeViewController.m */,
+				248224E01FE21A9D002F1E47 /* LocationListCell.h */,
+				248224E11FE21A9D002F1E47 /* LocationListCell.m */,
+				248224E21FE21A9D002F1E47 /* LocationListCell.xib */,
+				248224E51FE221AA002F1E47 /* LocationModel.h */,
+				248224E61FE221AA002F1E47 /* LocationModel.m */,
+				248224DB1FE21998002F1E47 /* LocationListViewController.h */,
+				248224DC1FE21998002F1E47 /* LocationListViewController.m */,
+				248224DD1FE21998002F1E47 /* LocationListViewController.xib */,
+				248224E81FE224C1002F1E47 /* ShowLocationViewController.h */,
+				248224E91FE224C1002F1E47 /* ShowLocationViewController.m */,
+				248224EA1FE224C1002F1E47 /* ShowLocationViewController.xib */,
 				248224A81FDFD5AA002F1E47 /* LocationViewController.h */,
 				248224A91FDFD5AA002F1E47 /* LocationViewController.m */,
 				248224AA1FDFD5AA002F1E47 /* LocationViewController.xib */,
@@ -408,6 +510,7 @@
 		24D675241FCBDECA0022525E /* image */ = {
 			isa = PBXGroup;
 			children = (
+				248224AD1FE0B34A002F1E47 /* 箭头.png */,
 				24880D3F1FD914A9007D078E /* 行情-自定义@2x.png */,
 				24880D401FD914A9007D078E /* 行情-自定义@3x.png */,
 				24880D161FD123E3007D078E /* nav_back@2x.png */,
@@ -544,12 +647,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248224AE1FE0B34A002F1E47 /* 箭头.png in Resources */,
 				24D6752A1FCBDECA0022525E /* 首页-选中@3x.png in Resources */,
 				24D6753E1FCBDF9A0022525E /* 资讯-选中@2x.png in Resources */,
+				248224DF1FE21998002F1E47 /* LocationListViewController.xib in Resources */,
 				24D674F41FCABF700022525E /* Info.plist in Resources */,
 				24D6752B1FCBDECA0022525E /* 首页-默认@2x.png in Resources */,
 				24D6753A1FCBDF9A0022525E /* 自选-选中@2x.png in Resources */,
 				24880D411FD914A9007D078E /* 行情-自定义@2x.png in Resources */,
+				248224EC1FE224C1002F1E47 /* ShowLocationViewController.xib in Resources */,
 				24880D421FD914A9007D078E /* 行情-自定义@3x.png in Resources */,
 				248224A41FDF7128002F1E47 /* MeterListViewController.xib in Resources */,
 				24D675421FCBDF9A0022525E /* 我的-默认@2x.png in Resources */,
@@ -571,6 +677,7 @@
 				24D675391FCBDF9A0022525E /* 自选-默认@3x.png in Resources */,
 				24D6752C1FCBDECA0022525E /* 首页-默认@3x.png in Resources */,
 				24D675291FCBDECA0022525E /* 首页-选中@2x.png in Resources */,
+				248224E41FE21A9D002F1E47 /* LocationListCell.xib in Resources */,
 				24880D321FD4E749007D078E /* CollectViewController.xib in Resources */,
 				24D675431FCBDF9A0022525E /* 资讯-默认@3x.png in Resources */,
 				24880D181FD123E4007D078E /* nav_back@2x.png in Resources */,
@@ -641,15 +748,21 @@
 			files = (
 				24D675211FCBC2450022525E /* UPTransitionPopAnimation.m in Sources */,
 				24D674F81FCBAFF50022525E /* SCTabbarViewController.m in Sources */,
+				248224CF1FE0D178002F1E47 /* YSMapPaintFunc.m in Sources */,
+				248224D21FE0D178002F1E47 /* YSCoordinateProcesser.m in Sources */,
+				248224B51FE0CA73002F1E47 /* Record.m in Sources */,
 				24D675231FCBC2450022525E /* UPTransitionPushAnimation.m in Sources */,
 				24DD88641FCFCCB900C3DB72 /* HttpRequestManager.m in Sources */,
 				24D675121FCBBB360022525E /* UIColor+rgb.m in Sources */,
+				248224EB1FE224C1002F1E47 /* ShowLocationViewController.m in Sources */,
 				24D675221FCBC2450022525E /* UPTransitionDismissAnimation.m in Sources */,
 				248224AB1FDFD5AA002F1E47 /* LocationViewController.m in Sources */,
 				24D6750D1FCBB4CD0022525E /* QueryViewController.m in Sources */,
 				24D675491FCBF86C0022525E /* SCDBManage.m in Sources */,
+				248224DE1FE21998002F1E47 /* LocationListViewController.m in Sources */,
 				24D675071FCBB4990022525E /* MeViewController.m in Sources */,
 				24D675161FCBC0EC0022525E /* SCNavigationController.m in Sources */,
+				248224D71FE0D178002F1E47 /* YSMapAnnotation.m in Sources */,
 				24D6750A1FCBB4AB0022525E /* MissionViewController.m in Sources */,
 				24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */,
 				24880D311FD4E749007D078E /* CollectViewController.m in Sources */,
@@ -660,13 +773,22 @@
 				24880D221FD142B0007D078E /* UnitNameCell.m in Sources */,
 				24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */,
 				24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */,
+				248224D01FE0D178002F1E47 /* YSMapCalculateFunc.m in Sources */,
 				24D674A11FCAA5140022525E /* AppDelegate.m in Sources */,
+				248224D31FE0D178002F1E47 /* LocationData.m in Sources */,
+				248224BB1FE0CB35002F1E47 /* MAMutablePolylineRenderer.m in Sources */,
+				248224DA1FE2048B002F1E47 /* SCTool.m in Sources */,
 				24D675201FCBC2450022525E /* UPTransitionPresentAnimation.m in Sources */,
 				24880D1D1FD13E08007D078E /* UnitDetailCell.m in Sources */,
 				24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */,
 				24880D3D1FD8E7CE007D078E /* CreateViewController.m in Sources */,
 				24880D291FD4DEAA007D078E /* BaseModel.m in Sources */,
+				248224D41FE0D178002F1E47 /* KalmanFilter.m in Sources */,
 				248224A71FDFBE3F002F1E47 /* LocModel.m in Sources */,
+				248224E31FE21A9D002F1E47 /* LocationListCell.m in Sources */,
+				248224D61FE0D178002F1E47 /* YSMapManager.m in Sources */,
+				248224B81FE0CAEA002F1E47 /* MAMutablePolyline.m in Sources */,
+				248224E71FE221AA002F1E47 /* LocationModel.m in Sources */,
 				24D675041FCBB47D0022525E /* HomeViewController.m in Sources */,
 				24880D2C1FD4DEBF007D078E /* UnitModel.m in Sources */,
 				248224A31FDF7128002F1E47 /* MeterListViewController.m in Sources */,

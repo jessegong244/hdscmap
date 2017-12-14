@@ -39,10 +39,12 @@
     [UnitManager getUnitDetailListByFatherId:self.fatherId resultBlock:^(NSMutableArray *unitArr, NSError *error) {
         self.unitDetailArr = unitArr;
         NSLog(@"arr = %@",unitArr);
-        [self addPoint];
+        
     }];
 }
-
+- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
+    [self addPoint];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -51,8 +53,9 @@
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     self.mapView.rotateEnabled = NO;
     self.mapView.rotateCameraEnabled = NO;
-    [self.mapView setMapType:MAMapTypeSatellite];
+    [self.mapView setMapType:MAMapTypeStandard];
     [self.mapView updateUserLocationRepresentation:self.rep];
+    [self.mapView setZoomLevel:15 animated:YES];
 }
 
 - (void)addPoint{

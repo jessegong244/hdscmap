@@ -144,6 +144,6 @@ fprintf(stderr, "\n");                                                      \
 
 //interface url
 //#define INTERFACE_ADDRESS   @"192.168.31.90:8080"
-#define INTERFACE_ADDRESS   @"192.168.2.104:8080"
+#define INTERFACE_ADDRESS   @"192.168.2.107:8080"
 
 #endif /* SCCommonDefine_h */

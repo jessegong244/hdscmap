@@ -7,23 +7,17 @@
 //
 
 #import "SCDBManage.h"
+#import "LocationModel.h"
 
 #define SCDatabaseName @"SCDatabaseName"        //总表
 
-#define CityTableName @"CityTableName"          //市局
-#define AreaTableName @"AreaTableName"          //分局
-#define PlaceTableName @"PlaceTableName"        //供电所
-#define StationTableName @"StationTableName"    //变电站
-#define LineTableName @"LineTableName"          //线路
-#define VillageTableName @"VillageTableName"    //村
-#define MeterTableName @"MeterTableName"        //户表
+#define COORDINATE_TABLE @"coordinate_tableName"//坐标
 
-
+#define LOCATION_KEY    @"location"
 
 @implementation SCDBManage{
     FMDatabaseQueue *_dbQueue;
-    NSArray *_tableArr;
-    NSArray *_nameArr;
+    
 }
 
 static SCDBManage *_instance = nil;
@@ -52,64 +46,60 @@ static SCDBManage *_instance = nil;
     if ([fileManager fileExistsAtPath:docPath] == NO) {
         [fileManager createDirectoryAtPath:docPath withIntermediateDirectories:YES attributes:nil error:nil];
     }
-    NSString *dbPath = [NSString stringWithFormat:@"%@/%@.db", docPath, SCDatabaseName];
+    NSString *dbPath = [NSString stringWithFormat:@"%@/%@.sqlite", docPath, SCDatabaseName];
     NSLog(@"path =   %@",dbPath);
-    
     _dbQueue = [FMDatabaseQueue databaseQueueWithPath:dbPath];
-    _tableArr = @[CityTableName,AreaTableName,PlaceTableName,StationTableName,LineTableName,VillageTableName,MeterTableName];
-    _nameArr = @[@"电力局",@"电力局分局",@"供电所",@"变电站",@"线路",@"xx村",@"户表"];
 }
 
 - (BOOL)initTable {
+    
     __block BOOL result = YES;
     [_dbQueue inDatabase:^(FMDatabase *db) {
         
-        for (int i = 0; i < _tableArr.count; i ++) {
-            
-            NSString * tableName = _tableArr[i];
-            if (![db tableExists:tableName]) {
-                NSString *sql = [NSString stringWithFormat:@"CREATE TABLE %@ (_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,fatherId INTEGER)", tableName];
-                result = [db executeUpdate:sql];
-                if (!result) {
-                    result = NO;
-                    NSLog(@"创建数据库%@失败--%@",tableName, sql);
-                }
+        if (![db tableExists:COORDINATE_TABLE]) {
+            NSString *sql = [NSString stringWithFormat:@"CREATE TABLE %@ (_id INTEGER PRIMARY KEY AUTOINCREMENT,location TEXT)", COORDINATE_TABLE];
+            result = [db executeUpdate:sql];
+            if (!result) {
+                result = NO;
+                NSLog(@"创建数据库%@失败--%@",COORDINATE_TABLE, sql);
             }
         }
     }];
     return result;
 }
 
-- (void)insertTestDb{
-    [self insertCity];
+- (void)insertLocation:(NSString *)locationString{
     
-}
-
-- (void)insertCity{
-    
-    [_dbQueue inTransaction:^(FMDatabase *db, BOOL *rollback) {
+    [_dbQueue inTransaction:^(FMDatabase * _Nonnull db, BOOL * _Nonnull rollback) {
+        NSString *sql = [NSString stringWithFormat:@"insert into %@ (location) values (\"%@\")",COORDINATE_TABLE,locationString];
         
-        NSString *sql = [NSString stringWithFormat:@"INSERT INTO %@ (name,fatherId) VALUES(\"%@\",%d)", CityTableName,
-                         @"武汉供电局",
-                         0];
         BOOL result = [db executeUpdate:sql];
         if (!result) {
-            NSLog(@"插入数据失败--%@", sql);
+            NSLog(@"insert 失败！！！---------%@",sql);
             *rollback = YES;
         }
     }];
 }
 
-- (void)insertArea{
-    [_dbQueue inTransaction:^(FMDatabase * _Nonnull db, BOOL * _Nonnull rollback) {
-        
-        
+- (NSArray<LocationModel *> *)getLocationList{
+    
+    __block NSMutableArray *arr = [NSMutableArray array];
+    [_dbQueue inDatabase:^(FMDatabase * _Nonnull db) {
+        NSString *sql = [NSString stringWithFormat:@"select * from %@",COORDINATE_TABLE];
+        FMResultSet *set = [db executeQuery:sql];
+        while ([set next]) {
+            NSInteger locId = [set intForColumn:@"_id"];
+            NSString *location = [set objectForColumn:@"location"];
+            
+            LocationModel *model = [LocationModel new];
+            model.locId = locId;
+            model.locationStr = location;
+            [arr addObject:model];
+        }
+        [set close];
     }];
+    return arr;
 }
-
-
-
-
 
 
 

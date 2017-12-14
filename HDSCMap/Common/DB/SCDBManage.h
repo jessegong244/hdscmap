@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
+#import "LocationModel.h"
 
 @interface SCDBManage : NSObject
 
 + (instancetype)sharedInstance;
 
-- (void)insertTestDb;
+//- (void)insertTestDb;
+
+- (void)insertLocation:(NSString *)locationString;
+
+- (NSArray<LocationModel *> *)getLocationList;
 
 @end

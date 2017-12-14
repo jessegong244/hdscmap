@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,13 +24,64 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpQ-Kk-GsC">
+                    <rect key="frame" x="311" y="619" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Qq5-Sz-txt"/>
+                        <constraint firstAttribute="height" constant="30" id="SNW-em-XPh"/>
+                    </constraints>
+                    <state key="normal" title="End">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="endAction:" destination="-1" eventType="touchUpInside" id="xRO-sM-6Ov"/>
+                        <action selector="locAction:" destination="-1" eventType="touchUpInside" id="wJL-ii-Sh8"/>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="6Du-rw-eKy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwc-YX-bhb">
+                    <rect key="frame" x="18" y="619" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WC0-gv-cIz"/>
+                        <constraint firstAttribute="width" constant="46" id="ssn-gC-P3H"/>
+                    </constraints>
+                    <state key="normal" title="Start">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="locAction:" destination="-1" eventType="touchUpInside" id="Ods-Tv-CZ3"/>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="50D-CT-P2x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-QX-TmW">
+                    <rect key="frame" x="18" y="18" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="RgO-qW-OBl"/>
+                        <constraint firstAttribute="width" constant="46" id="ndD-Mv-Wf6"/>
+                    </constraints>
+                    <state key="normal" title="Loc">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="locAction:" destination="-1" eventType="touchUpInside" id="Rh3-Q7-xE7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="C3T-QX-TmW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="07x-Rx-HQC"/>
+                <constraint firstAttribute="bottom" secondItem="cwc-YX-bhb" secondAttribute="bottom" constant="18" id="1Jr-YR-sFx"/>
                 <constraint firstItem="Qbf-Ex-Ba0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Da-ch-AdP"/>
                 <constraint firstItem="Qbf-Ex-Ba0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AXt-pY-NQ1"/>
+                <constraint firstItem="cwc-YX-bhb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="Jgn-as-Vjk"/>
+                <constraint firstItem="C3T-QX-TmW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="KiK-f5-x2q"/>
                 <constraint firstAttribute="bottom" secondItem="Qbf-Ex-Ba0" secondAttribute="bottom" id="Po6-EB-sJa"/>
+                <constraint firstAttribute="bottom" secondItem="ZpQ-Kk-GsC" secondAttribute="bottom" constant="18" id="WVa-91-afH"/>
                 <constraint firstAttribute="trailing" secondItem="Qbf-Ex-Ba0" secondAttribute="trailing" id="g8z-vw-lCc"/>
+                <constraint firstAttribute="trailing" secondItem="ZpQ-Kk-GsC" secondAttribute="trailing" constant="18" id="uxR-fK-92z"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="57.5"/>
         </view>
