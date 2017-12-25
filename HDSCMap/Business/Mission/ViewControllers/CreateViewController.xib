@@ -31,11 +31,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-Bm-MuQ" userLabel="content">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmM-XP-a1A">
                                     <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="OUy-c6-Pbh"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="e4Z-S1-GIx"/>
@@ -58,7 +57,6 @@
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yC-5r-ULX">
                                     <rect key="frame" x="0.0" y="30" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="Iap-cw-RY4"/>
                                         <constraint firstAttribute="height" constant="30" id="qeO-9b-UDN"/>
@@ -78,7 +76,6 @@
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXa-DP-lAH">
                                     <rect key="frame" x="0.0" y="60" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="O5G-t1-hI7"/>
                                         <constraint firstAttribute="height" constant="30" id="nik-x9-frz"/>
@@ -98,7 +95,6 @@
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经纬度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKF-Iz-ZQa">
                                     <rect key="frame" x="0.0" y="90" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="OTb-TK-hDI"/>
                                         <constraint firstAttribute="width" constant="80" id="Wxr-Yt-tlQ"/>
@@ -165,7 +161,6 @@
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYL-OT-i8C">
                                     <rect key="frame" x="0.0" y="248" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="YTq-3E-Xlz"/>
                                         <constraint firstAttribute="width" constant="80" id="xq5-Kl-sVX"/>
@@ -176,7 +171,6 @@
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2J-Tz-hEt">
                                     <rect key="frame" x="0.0" y="278" width="80" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.1397999395" blue="0.066386848220000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="DYJ-Av-YQo"/>
                                         <constraint firstAttribute="width" constant="80" id="U6c-Yp-adS"/>
@@ -207,6 +201,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="dCW-6Z-zKl" secondAttribute="trailing" id="1lA-Lf-pHq"/>
+                                <constraint firstAttribute="bottom" secondItem="wyr-Rp-L2g" secondAttribute="bottom" constant="460" id="2nw-p8-KNP"/>
                                 <constraint firstItem="Trz-Wy-KVs" firstAttribute="top" secondItem="Rgr-Bm-MuQ" secondAttribute="top" id="2tS-4Z-O1K"/>
                                 <constraint firstItem="X64-ZN-D94" firstAttribute="top" secondItem="MT9-GN-XCQ" secondAttribute="bottom" id="4N1-xA-vqb"/>
                                 <constraint firstAttribute="trailing" secondItem="Boi-gC-4oV" secondAttribute="trailing" id="4Un-J5-iXG"/>
@@ -253,7 +248,6 @@
                         <constraint firstItem="Rgr-Bm-MuQ" firstAttribute="width" secondItem="QvB-sA-Zy8" secondAttribute="width" id="1IU-S1-URz"/>
                         <constraint firstAttribute="bottom" secondItem="Rgr-Bm-MuQ" secondAttribute="bottom" id="Cdp-ya-e8W"/>
                         <constraint firstItem="Rgr-Bm-MuQ" firstAttribute="top" secondItem="QvB-sA-Zy8" secondAttribute="top" id="RGI-Vh-MGx"/>
-                        <constraint firstItem="Rgr-Bm-MuQ" firstAttribute="height" secondItem="QvB-sA-Zy8" secondAttribute="height" id="VaD-68-8ay"/>
                         <constraint firstAttribute="trailing" secondItem="Rgr-Bm-MuQ" secondAttribute="trailing" id="wfB-Qz-8Xw"/>
                         <constraint firstItem="Rgr-Bm-MuQ" firstAttribute="leading" secondItem="QvB-sA-Zy8" secondAttribute="leading" id="wr8-FL-Ctn"/>
                     </constraints>

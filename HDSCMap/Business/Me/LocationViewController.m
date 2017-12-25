@@ -117,7 +117,7 @@
         MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
         
         polylineRenderer.lineWidth    = 8.f;
-        polylineRenderer.strokeColor  = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.6];
+        polylineRenderer.strokeColor  = [UIColor blueColor];
         polylineRenderer.lineJoinType = kMALineJoinRound;
         polylineRenderer.lineCapType  = kMALineCapRound;
         
@@ -145,13 +145,24 @@
 
 - (void)savePointArr{
     
-    if (self.annotationRecordArray.count <6) {
+    if (self.annotationRecordArray.count <2) {
         return;
     }
     
-    NSString *dataStr = [SCTool stringByAppendingLocArray:self.annotationRecordArray];
-    NSLog(@"datastr = %@",dataStr);
-    [[SCDBManage sharedInstance] insertLocation:dataStr];
+    [self.mapView showOverlays:self.mapView.overlays edgePadding:UIEdgeInsetsMake(50, 100, 50, 100) animated:NO];
+    
+    [self.mapView takeSnapshotInRect:self.mapView.frame withCompletionBlock:^(UIImage *resultImage, NSInteger state) {
+//        screenshotImage = resultImage;
+//        resState = state; // state表示地图此时是否完整，0-不完整，1-完整
+        NSString *imagePath = [SCTool saveImageToDocument:resultImage];
+        NSString *dataStr = [SCTool stringByAppendingLocArray:self.annotationRecordArray];
+        
+        LocationModel *model = [LocationModel new];
+        model.locationStr = dataStr;
+        model.imageUrl = imagePath;
+        [[SCDBManage sharedInstance] insertLocationModel:model];
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
 }
 
 - (void)endLocation
@@ -159,8 +170,6 @@
     _isLocating = NO;
     
     [self savePointArr];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)addUpdateRoute
 {

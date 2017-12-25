@@ -57,7 +57,7 @@ static SCDBManage *_instance = nil;
     [_dbQueue inDatabase:^(FMDatabase *db) {
         
         if (![db tableExists:COORDINATE_TABLE]) {
-            NSString *sql = [NSString stringWithFormat:@"CREATE TABLE %@ (_id INTEGER PRIMARY KEY AUTOINCREMENT,location TEXT)", COORDINATE_TABLE];
+            NSString *sql = [NSString stringWithFormat:@"CREATE TABLE %@ (_id INTEGER PRIMARY KEY AUTOINCREMENT,location TEXT,imageUrl TEXT)", COORDINATE_TABLE];
             result = [db executeUpdate:sql];
             if (!result) {
                 result = NO;
@@ -68,10 +68,9 @@ static SCDBManage *_instance = nil;
     return result;
 }
 
-- (void)insertLocation:(NSString *)locationString{
-    
+- (void)insertLocationModel:(LocationModel *)model{
     [_dbQueue inTransaction:^(FMDatabase * _Nonnull db, BOOL * _Nonnull rollback) {
-        NSString *sql = [NSString stringWithFormat:@"insert into %@ (location) values (\"%@\")",COORDINATE_TABLE,locationString];
+        NSString *sql = [NSString stringWithFormat:@"insert into %@ (location,imageUrl) values (\"%@\",\"%@\")",COORDINATE_TABLE,model.locationStr,model.imageUrl];
         
         BOOL result = [db executeUpdate:sql];
         if (!result) {
@@ -90,10 +89,11 @@ static SCDBManage *_instance = nil;
         while ([set next]) {
             NSInteger locId = [set intForColumn:@"_id"];
             NSString *location = [set objectForColumn:@"location"];
-            
+            NSString *imageUrl = [set objectForColumn:@"imageUrl"];
             LocationModel *model = [LocationModel new];
             model.locId = locId;
             model.locationStr = location;
+            model.imageUrl = imageUrl;
             [arr addObject:model];
         }
         [set close];

@@ -14,9 +14,7 @@
 
 + (instancetype)sharedInstance;
 
-//- (void)insertTestDb;
-
-- (void)insertLocation:(NSString *)locationString;
+- (void)insertLocationModel:(LocationModel *)model;
 
 - (NSArray<LocationModel *> *)getLocationList;
 

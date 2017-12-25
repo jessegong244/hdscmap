@@ -31,6 +31,10 @@
 		248224E71FE221AA002F1E47 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224E61FE221AA002F1E47 /* LocationModel.m */; };
 		248224EB1FE224C1002F1E47 /* ShowLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224E91FE224C1002F1E47 /* ShowLocationViewController.m */; };
 		248224EC1FE224C1002F1E47 /* ShowLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248224EA1FE224C1002F1E47 /* ShowLocationViewController.xib */; };
+		248224EE1FE75E34002F1E47 /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 248224ED1FE75E33002F1E47 /* mark.png */; };
+		248224F11FE76AAA002F1E47 /* SCCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224F01FE76AAA002F1E47 /* SCCalloutView.m */; };
+		248224F41FE76B85002F1E47 /* SCAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224F31FE76B85002F1E47 /* SCAnnotationView.m */; };
+		248224F71FE8E8DE002F1E47 /* SCPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 248224F61FE8E8DE002F1E47 /* SCPointAnnotation.m */; };
 		24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D081FD0E1C7007D078E /* UnitDetailModel.m */; };
 		24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */; };
 		24880D0F1FD0FBED007D078E /* MenuConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D0E1FD0FBED007D078E /* MenuConfig.m */; };
@@ -87,6 +91,9 @@
 		24D675441FCBDF9A0022525E /* 资讯-默认@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D675381FCBDF9A0022525E /* 资讯-默认@2x.png */; };
 		24D675491FCBF86C0022525E /* SCDBManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D675481FCBF86C0022525E /* SCDBManage.m */; };
 		24DD88641FCFCCB900C3DB72 /* HttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD88631FCFCCB900C3DB72 /* HttpRequestManager.m */; };
+		24E800EC1FEB5E980045A4F8 /* 电表.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E800EB1FEB5E980045A4F8 /* 电表.png */; };
+		24E800EE1FECF2F50045A4F8 /* town.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E800ED1FECF2F50045A4F8 /* town.png */; };
+		24E800F11FECF9580045A4F8 /* TownPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E800F01FECF9580045A4F8 /* TownPointAnnotation.m */; };
 		A0A289FAF4174D64DCBDF78B /* libPods-HDSCMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2005B13958113CC5387677 /* libPods-HDSCMap.a */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +142,13 @@
 		248224E81FE224C1002F1E47 /* ShowLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowLocationViewController.h; sourceTree = "<group>"; };
 		248224E91FE224C1002F1E47 /* ShowLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowLocationViewController.m; sourceTree = "<group>"; };
 		248224EA1FE224C1002F1E47 /* ShowLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowLocationViewController.xib; sourceTree = "<group>"; };
+		248224ED1FE75E33002F1E47 /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
+		248224EF1FE76AAA002F1E47 /* SCCalloutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCalloutView.h; sourceTree = "<group>"; };
+		248224F01FE76AAA002F1E47 /* SCCalloutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCalloutView.m; sourceTree = "<group>"; };
+		248224F21FE76B85002F1E47 /* SCAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAnnotationView.h; sourceTree = "<group>"; };
+		248224F31FE76B85002F1E47 /* SCAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAnnotationView.m; sourceTree = "<group>"; };
+		248224F51FE8E8DE002F1E47 /* SCPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPointAnnotation.h; sourceTree = "<group>"; };
+		248224F61FE8E8DE002F1E47 /* SCPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPointAnnotation.m; sourceTree = "<group>"; };
 		24880D071FD0E1C7007D078E /* UnitDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitDetailModel.h; sourceTree = "<group>"; };
 		24880D081FD0E1C7007D078E /* UnitDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitDetailModel.m; sourceTree = "<group>"; };
 		24880D0A1FD0F595007D078E /* SkyAssociationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyAssociationMenuView.m; sourceTree = "<group>"; };
@@ -221,6 +235,10 @@
 		24D675481FCBF86C0022525E /* SCDBManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBManage.m; sourceTree = "<group>"; };
 		24DD88621FCFCCB900C3DB72 /* HttpRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequestManager.h; sourceTree = "<group>"; };
 		24DD88631FCFCCB900C3DB72 /* HttpRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequestManager.m; sourceTree = "<group>"; };
+		24E800EB1FEB5E980045A4F8 /* 电表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电表.png"; sourceTree = "<group>"; };
+		24E800ED1FECF2F50045A4F8 /* town.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = town.png; sourceTree = "<group>"; };
+		24E800EF1FECF9580045A4F8 /* TownPointAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TownPointAnnotation.h; sourceTree = "<group>"; };
+		24E800F01FECF9580045A4F8 /* TownPointAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TownPointAnnotation.m; sourceTree = "<group>"; };
 		4C2005B13958113CC5387677 /* libPods-HDSCMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HDSCMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -239,15 +257,15 @@
 		248224BC1FE0D178002F1E47 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				248224C21FE0D178002F1E47 /* Kalman */,
 				248224BD1FE0D178002F1E47 /* YSMapCalculateFunc.h */,
+				248224C11FE0D178002F1E47 /* YSMapCalculateFunc.m */,
+				248224CD1FE0D178002F1E47 /* YSMapPaintFunc.h */,
 				248224BE1FE0D178002F1E47 /* YSMapPaintFunc.m */,
 				248224BF1FE0D178002F1E47 /* YSMapAnnotation.h */,
-				248224C01FE0D178002F1E47 /* YSMapManager.h */,
-				248224C11FE0D178002F1E47 /* YSMapCalculateFunc.m */,
-				248224C21FE0D178002F1E47 /* Kalman */,
-				248224CC1FE0D178002F1E47 /* YSMapManager.m */,
-				248224CD1FE0D178002F1E47 /* YSMapPaintFunc.h */,
 				248224CE1FE0D178002F1E47 /* YSMapAnnotation.m */,
+				248224C01FE0D178002F1E47 /* YSMapManager.h */,
+				248224CC1FE0D178002F1E47 /* YSMapManager.m */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -256,11 +274,11 @@
 			isa = PBXGroup;
 			children = (
 				248224C31FE0D178002F1E47 /* KalmanFilter.h */,
+				248224CA1FE0D178002F1E47 /* KalmanFilter.m */,
 				248224C41FE0D178002F1E47 /* LocationData.h */,
+				248224C91FE0D178002F1E47 /* LocationData.m */,
 				248224C51FE0D178002F1E47 /* YSCoordinateProcesser.h */,
 				248224C81FE0D178002F1E47 /* YSCoordinateProcesser.m */,
-				248224C91FE0D178002F1E47 /* LocationData.m */,
-				248224CA1FE0D178002F1E47 /* KalmanFilter.m */,
 			);
 			path = Kalman;
 			sourceTree = "<group>";
@@ -314,6 +332,14 @@
 				248224A01FDF7128002F1E47 /* MeterListViewController.h */,
 				248224A11FDF7128002F1E47 /* MeterListViewController.m */,
 				248224A21FDF7128002F1E47 /* MeterListViewController.xib */,
+				248224EF1FE76AAA002F1E47 /* SCCalloutView.h */,
+				248224F01FE76AAA002F1E47 /* SCCalloutView.m */,
+				248224F51FE8E8DE002F1E47 /* SCPointAnnotation.h */,
+				248224F61FE8E8DE002F1E47 /* SCPointAnnotation.m */,
+				24E800EF1FECF9580045A4F8 /* TownPointAnnotation.h */,
+				24E800F01FECF9580045A4F8 /* TownPointAnnotation.m */,
+				248224F21FE76B85002F1E47 /* SCAnnotationView.h */,
+				248224F31FE76B85002F1E47 /* SCAnnotationView.m */,
 				24880D3A1FD8E7CE007D078E /* CreateViewController.h */,
 				24880D3B1FD8E7CE007D078E /* CreateViewController.m */,
 				24880D3C1FD8E7CE007D078E /* CreateViewController.xib */,
@@ -510,6 +536,9 @@
 		24D675241FCBDECA0022525E /* image */ = {
 			isa = PBXGroup;
 			children = (
+				24E800ED1FECF2F50045A4F8 /* town.png */,
+				24E800EB1FEB5E980045A4F8 /* 电表.png */,
+				248224ED1FE75E33002F1E47 /* mark.png */,
 				248224AD1FE0B34A002F1E47 /* 箭头.png */,
 				24880D3F1FD914A9007D078E /* 行情-自定义@2x.png */,
 				24880D401FD914A9007D078E /* 行情-自定义@3x.png */,
@@ -648,6 +677,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				248224AE1FE0B34A002F1E47 /* 箭头.png in Resources */,
+				248224EE1FE75E34002F1E47 /* mark.png in Resources */,
+				24E800EE1FECF2F50045A4F8 /* town.png in Resources */,
 				24D6752A1FCBDECA0022525E /* 首页-选中@3x.png in Resources */,
 				24D6753E1FCBDF9A0022525E /* 资讯-选中@2x.png in Resources */,
 				248224DF1FE21998002F1E47 /* LocationListViewController.xib in Resources */,
@@ -668,6 +699,7 @@
 				24D675401FCBDF9A0022525E /* 我的-默认@3x.png in Resources */,
 				24D6753F1FCBDF9A0022525E /* 自选-选中@3x.png in Resources */,
 				24880D251FD395B1007D078E /* Launch Screen.storyboard in Resources */,
+				24E800EC1FEB5E980045A4F8 /* 电表.png in Resources */,
 				24880D1E1FD13E08007D078E /* UnitDetailCell.xib in Resources */,
 				24D675441FCBDF9A0022525E /* 资讯-默认@2x.png in Resources */,
 				24880D3E1FD8E7CE007D078E /* CreateViewController.xib in Resources */,
@@ -695,6 +727,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDSCMap/Pods-HDSCMap-resources.sh",
 				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
@@ -764,6 +797,7 @@
 				24D675161FCBC0EC0022525E /* SCNavigationController.m in Sources */,
 				248224D71FE0D178002F1E47 /* YSMapAnnotation.m in Sources */,
 				24D6750A1FCBB4AB0022525E /* MissionViewController.m in Sources */,
+				248224F11FE76AAA002F1E47 /* SCCalloutView.m in Sources */,
 				24880D131FD10BBD007D078E /* UnitDetailViewController.m in Sources */,
 				24880D311FD4E749007D078E /* CollectViewController.m in Sources */,
 				24880D391FD7D868007D078E /* PageUtil.m in Sources */,
@@ -772,6 +806,7 @@
 				24D674C81FCAB26A0022525E /* main.m in Sources */,
 				24880D221FD142B0007D078E /* UnitNameCell.m in Sources */,
 				24880D0C1FD0F595007D078E /* SkyAssociationMenuView.m in Sources */,
+				24E800F11FECF9580045A4F8 /* TownPointAnnotation.m in Sources */,
 				24880D091FD0E1C7007D078E /* UnitDetailModel.m in Sources */,
 				248224D01FE0D178002F1E47 /* YSMapCalculateFunc.m in Sources */,
 				24D674A11FCAA5140022525E /* AppDelegate.m in Sources */,
@@ -786,10 +821,12 @@
 				248224D41FE0D178002F1E47 /* KalmanFilter.m in Sources */,
 				248224A71FDFBE3F002F1E47 /* LocModel.m in Sources */,
 				248224E31FE21A9D002F1E47 /* LocationListCell.m in Sources */,
+				248224F41FE76B85002F1E47 /* SCAnnotationView.m in Sources */,
 				248224D61FE0D178002F1E47 /* YSMapManager.m in Sources */,
 				248224B81FE0CAEA002F1E47 /* MAMutablePolyline.m in Sources */,
 				248224E71FE221AA002F1E47 /* LocationModel.m in Sources */,
 				24D675041FCBB47D0022525E /* HomeViewController.m in Sources */,
+				248224F71FE8E8DE002F1E47 /* SCPointAnnotation.m in Sources */,
 				24880D2C1FD4DEBF007D078E /* UnitModel.m in Sources */,
 				248224A31FDF7128002F1E47 /* MeterListViewController.m in Sources */,
 			);
@@ -846,7 +883,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -895,7 +932,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -14,7 +14,7 @@ pod 'AMap3DMap-NO-IDFA' #3D地图SDK
 pod 'AMapSearch-NO-IDFA' #搜索功能
 pod 'AMapLocation-NO-IDFA'
 pod 'QBImagePickerController'
-
+pod 'IQKeyboardManager'
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 
 end

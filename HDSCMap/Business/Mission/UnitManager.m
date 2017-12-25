@@ -82,6 +82,44 @@
     }];
 }
 
++ (void)updateUnitAndDetailWithName:(NSString *)name
+                                 id:(NSInteger)Id
+                             unitId:(NSInteger)unitId
+                            address:(NSString *)address
+                        description:(NSString *)desc
+                             number:(NSString *)num
+                              phone:(NSString *)phone
+                          longitude:(double)longitude
+                           latitude:(double)latitude
+                           fatherId:(NSInteger)fatherId
+                              level:(NSInteger)level
+                              image:(NSString *)image
+                        resultBlock:(void (^)(id, NSError *))Block{
+    NSString *urlName = @"updateUnitDetail";
+    NSDictionary *param = @{
+                            @"name":[self encodeing:name],
+                            @"address":[self encodeing:address],
+                            @"description":[self encodeing:desc],
+                            @"number":[self encodeing:num],
+                            @"phone":[self encodeing:phone],
+                            @"longitude":[NSNumber numberWithDouble:longitude],
+                            @"latitude":[NSNumber numberWithDouble:latitude],
+                            @"fatherId":[NSNumber numberWithInteger:fatherId],
+                            @"level":[NSNumber numberWithInteger:level],
+                            @"id":[NSNumber numberWithInteger:Id],
+                            @"unitId":[NSNumber numberWithInteger:unitId],
+                            @"image":[self encodeing:image]
+                            };
+    [HttpRequestManager httpRequestPostWithUrl:urlName parameter:param success:^(id returnData) {
+        if (Block) {
+            Block(returnData,nil);
+        }
+    } failture:^(id returnData) {
+        
+        Block(nil,nil);
+    }];
+}
+
 + (NSString *)encodeing:(NSString *)str{
     NSString *urlStr=[str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     return urlStr;

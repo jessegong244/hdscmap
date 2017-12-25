@@ -10,7 +10,8 @@
 
 @interface LocationModel : BaseModel
 
-@property (nonatomic,assign) NSInteger locId;
-@property (nonatomic,copy) NSString *locationStr;
+@property (nonatomic,assign)    NSInteger locId;
+@property (nonatomic,copy)      NSString *locationStr;
+@property (nonatomic,copy)      NSString *imageUrl;
 
 @end

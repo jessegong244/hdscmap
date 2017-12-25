@@ -38,7 +38,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LocationListCell *cell = [LocationListCell cellWithTableView:tableView];
+    LocationModel *model = self.dataArr[indexPath.row];
+    LocationListCell *cell = [LocationListCell cellWithTableView:tableView model:model];
     return cell;
 }
 

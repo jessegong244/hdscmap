@@ -65,6 +65,9 @@
                     <constraint firstAttribute="trailing" secondItem="3mU-qq-bYy" secondAttribute="trailing" id="zKk-Tv-TZu"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="locationImageView" destination="igb-B8-66u" id="yYG-mA-htH"/>
+            </connections>
             <point key="canvasLocation" x="34" y="36"/>
         </tableViewCell>
     </objects>

@@ -7,6 +7,13 @@
 //
 
 #import "LocationListCell.h"
+#import "SCTool.h"
+
+@interface LocationListCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *locationImageView;
+
+@end
 
 @implementation LocationListCell
 
@@ -15,13 +22,14 @@
     
 }
 
-+ (LocationListCell *)cellWithTableView:(UITableView *)tableView{
++ (LocationListCell *)cellWithTableView:(UITableView *)tableView model:(LocationModel *)model{
     
     LocationListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([self class])];
     if (nil == cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] firstObject];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.locationImageView.image = [SCTool getDocumentImage:model.imageUrl];
     return cell;
 }
 

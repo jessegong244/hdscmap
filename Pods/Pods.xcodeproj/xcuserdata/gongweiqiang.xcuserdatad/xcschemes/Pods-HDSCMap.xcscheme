@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3D42D99F4EFAC5037B9ED01550CFE19C'
+               BlueprintIdentifier = '37CDA71CC8255578879152DF756788F5'
                BlueprintName = 'Pods-HDSCMap'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-HDSCMap.a'>

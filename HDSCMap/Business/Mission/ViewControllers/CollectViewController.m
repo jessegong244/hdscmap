@@ -166,9 +166,13 @@
     if (_hubiaoLevel == 0 || _hubiaoFatherId == 0) {
         return;
     }
+    
+    UnitDetailModel *model = [UnitDetailModel new];
+    model.fatherId = _hubiaoFatherId;
+    model.level = _hubiaoLevel;
+    
     CreateViewController *vc = [CreateViewController new];
-    vc.fatherId = _hubiaoFatherId;
-    vc.level = _hubiaoLevel;
+    vc.model = model;
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)checkAction:(id)sender {

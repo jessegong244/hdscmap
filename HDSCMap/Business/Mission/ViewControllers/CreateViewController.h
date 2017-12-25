@@ -7,10 +7,13 @@
 //
 
 #import "SCBaseViewController.h"
+#import "UnitDetailModel.h"
 
 @interface CreateViewController : SCBaseViewController
 
-@property (nonatomic,assign) NSInteger fatherId;
-@property (nonatomic,assign) NSInteger level;
+//@property (nonatomic,assign) NSInteger fatherId;
+//@property (nonatomic,assign) NSInteger level;
+
+@property (nonatomic,strong) UnitDetailModel *model;
 
 @end

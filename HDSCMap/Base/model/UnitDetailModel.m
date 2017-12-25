@@ -12,7 +12,7 @@
 
 + (instancetype)modelWithDictionary:(NSDictionary *)dic{
     UnitDetailModel *model = [[UnitDetailModel alloc] init];
-    model.address = dic[@"address"];
+    model.address = dic[@"address"]?dic[@"address"]:@"";
     model.descriptions = dic[@"description"];
     model.keyId = ((NSString *)dic[@"id"]).integerValue;
     model.image = dic[@"image"];

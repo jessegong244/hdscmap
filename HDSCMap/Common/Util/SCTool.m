@@ -9,6 +9,8 @@
 #import "SCTool.h"
 #import "YSMapAnnotation.h"
 
+#pragma IMAGE_PATH  @"/Documents/"
+
 @implementation SCTool
 
 + (NSString *)stringByAppendingLocArray:(NSArray *)arr{
@@ -50,6 +52,32 @@
 
 + (NSArray<YSMapAnnotation *> *)coordinateArrWithLocation:(LocationModel *)model{
     return [self coordinateArrWithString:model.locationStr];
+}
+
++ (NSString *)saveImageToDocument:(UIImage *)image{
+    
+    NSString *imageName = [self createImageName];
+    
+    NSString *imagePath = [NSHomeDirectory() stringByAppendingString:[NSString stringWithFormat:@"/Documents/%@",imageName]];
+    NSString *projPath = [NSString stringWithFormat:@"/Documents/%@",imageName];
+    [UIImagePNGRepresentation(image) writeToFile:imagePath atomically:YES];
+    return projPath;
+}
+
++ (UIImage *)getDocumentImage:(NSString *)imagePath{
+    if (!imagePath) {
+        return nil;
+    }
+    return [[UIImage alloc] initWithContentsOfFile:[NSHomeDirectory() stringByAppendingString:imagePath]];
+}
+
++ (NSString *)createImageName{
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyyMMddHHmmss";
+    NSString *str = [formatter stringFromDate:[NSDate date]];
+    NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
+    return fileName;
 }
 
 

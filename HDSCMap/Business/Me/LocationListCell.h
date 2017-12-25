@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationModel.h"
 
 @interface LocationListCell : UITableViewCell
 
-+ (LocationListCell *)cellWithTableView:(UITableView *)tableView;
++ (LocationListCell *)cellWithTableView:(UITableView *)tableView model:(LocationModel *)model;
 
 @end

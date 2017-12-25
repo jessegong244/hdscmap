@@ -9,6 +9,7 @@
 #import "ShowLocationViewController.h"
 #import <MAMapKit/MAMapKit.h>
 #import "YSMapAnnotation.h"
+#import "SCTool.h"
 
 @interface ShowLocationViewController ()<MAMapViewDelegate>
 
@@ -22,14 +23,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:0 target:self action:@selector(getScreen)];
-    self.navigationItem.rightBarButtonItem = item;
+//    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:0 target:self action:@selector(getScreen)];
+//    self.navigationItem.rightBarButtonItem = item;
     
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
     
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
-//    [self.mapView setZoomLevel:15 animated:YES];
     
     [self addAnnotation];
 }
@@ -50,7 +50,7 @@
     
     MAPolyline *polyline = [MAPolyline polylineWithCoordinates:polylineCoords count:count];
     [self.mapView addOverlay:polyline];
-    [self.mapView showOverlays:self.mapView.overlays edgePadding:UIEdgeInsetsMake(50, 100, 50, 100) animated:YES];
+    [self.mapView showOverlays:self.mapView.overlays edgePadding:UIEdgeInsetsMake(100, 100, 100, 100) animated:YES];
 }
 
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id <MAOverlay>)overlay
@@ -67,17 +67,6 @@
         return polylineRenderer;
     }
     return nil;
-}
-
-- (void)getScreen{
-    
-    __block UIImage *screenshotImage = nil;
-    __block NSInteger resState = 0;
-    [self.mapView takeSnapshotInRect:self.mapView.frame withCompletionBlock:^(UIImage *resultImage, NSInteger state) {
-        screenshotImage = resultImage;
-        resState = state; // state表示地图此时是否完整，0-不完整，1-完整
-        self.screenImage.image = resultImage;
-    }];
 }
 
 

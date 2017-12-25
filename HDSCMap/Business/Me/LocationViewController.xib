@@ -31,7 +31,7 @@
                         <constraint firstAttribute="width" constant="46" id="Qq5-Sz-txt"/>
                         <constraint firstAttribute="height" constant="30" id="SNW-em-XPh"/>
                     </constraints>
-                    <state key="normal" title="End">
+                    <state key="normal" title="完成">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>

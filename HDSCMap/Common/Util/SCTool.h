@@ -18,4 +18,8 @@
 
 + (NSArray<YSMapAnnotation *> *)coordinateArrWithLocation:(LocationModel *)model;
 
++ (NSString *)saveImageToDocument:(UIImage *)image;
+
++ (UIImage *)getDocumentImage:(NSString *)imagePath;
+
 @end
